@@ -25,13 +25,15 @@ export default defineConfig({
     vue2(),
     federation({
       name: 'Microfrontend-vue2',
-      filename: 'Microfrontend-vue2.js',
+      filename: 'proyect.js',
       // Modules to expose
       exposes: {
-        './Microfrontend-vue2': './src/components/HelloWorld.vue',
+        './Microfrontend-vue2': './src/components/FormTest.vue',
+        './remoteStore': './src/store/store.js',
       },
       shared: {
         vue: {},
+        vuex: {},
       }
     }),
     topLevelAwait({

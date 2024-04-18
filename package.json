@@ -7,12 +7,17 @@
     "preview": "vite preview --port 5005"
   },
   "dependencies": {
+    "js-cookie": "^3.0.5",
     "vite-plugin-top-level-await": "^1.4.1",
-    "vue": "^2.7.7"
+    "vue": "^2.7.7",
+    "vue-axios": "^3.5.2",
+    "vuex": "^3"
   },
   "devDependencies": {
     "@vitejs/plugin-legacy": "^2.0.0",
     "@vitejs/plugin-vue2": "^1.1.2",
+    "node-sass": "^9.0.0",
+    "sass-loader": "^14.2.1",
     "terser": "^5.14.2",
     "vite": "^3.0.2"
   }
