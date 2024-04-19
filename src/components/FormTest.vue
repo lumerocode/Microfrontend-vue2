@@ -36,6 +36,7 @@
                 </div>
             </div>
         </div>
+        <button @click="update">aumentar</button>
     </section>
 </template>
 
@@ -47,6 +48,9 @@ export default {
     };
   },
   methods: {
+    update() {
+        console.log("aumentar", this.$store.state.contador)
+    }
   },
 };
 </script>

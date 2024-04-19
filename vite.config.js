@@ -25,7 +25,7 @@ export default defineConfig({
     vue2(),
     federation({
       name: 'Microfrontend-vue2',
-      filename: 'proyect.js',
+      filename: 'Microfrontend-vue2.js',
       // Modules to expose
       exposes: {
         './Microfrontend-vue2': './src/components/FormTest.vue',
