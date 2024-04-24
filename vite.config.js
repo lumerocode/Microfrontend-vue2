@@ -11,7 +11,7 @@ const APPLICATION_PORT = 5005
 export default defineConfig({
   build: {
     assetsInlineLimit: 40960,
-    minify: true,
+    minify: false,
     cssCodeSplit: false,
     sourcemap: true,
   },
@@ -28,8 +28,7 @@ export default defineConfig({
       filename: 'Microfrontend-vue2.js',
       // Modules to expose
       exposes: {
-        './Microfrontend-vue2': './src/components/FormTest.vue',
-        './remoteStore': './src/store/store.js',
+        './HelloWorld': './src/components/HelloWorld.vue'
       },
       shared: {
         vue: {},
@@ -37,10 +36,9 @@ export default defineConfig({
       }
     }),
     topLevelAwait({
-      // The export name of top-level await promise for each chunk module
       promiseExportName: "__tla",
-      // The function to generate import names of top-level await promise in each chunk module
-      promiseImportName: i => `__tla_${i}`
+      // Corregir la función de generación de nombres de importación
+      promiseImportName: i => `__tla${i}`
     })
   ],
   resolve: {

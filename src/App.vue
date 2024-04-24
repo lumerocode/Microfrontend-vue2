@@ -1,6 +1,5 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
-import FormTest from './components/FormTest.vue'
 </script>
 
 <template>
@@ -8,7 +7,7 @@ import FormTest from './components/FormTest.vue'
     <header>
       <div class="wrapper">
         <!-- <HelloWorld msg="You did it!" /> -->
-        <FormTest/>
+        <HelloWorld/>
       </div>
     </header>
   </div>
