@@ -1,18 +1,15 @@
 <template>
     <section>
-        <div class="container">
-            <div class="row mrgt">
-                <div class="col-md-12">            
-                    <h2>Formulario en VUe2</h2>                    
-                </div>
-            </div>
-        </div>
-       
+        <Layout/>
     </section>
 </template>
 
 <script>
+import Layout from './layout.vue'
 export default {
+    components: {
+        Layout
+    },
   data() {
     return {
       
@@ -22,3 +19,7 @@ export default {
   },
 };
 </script>
+
+<style scoped lang="scss">
+    
+</style>

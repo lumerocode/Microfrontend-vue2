@@ -5,6 +5,7 @@
   margin: 0 auto;
   padding: 2rem;
   font-weight: normal;
+  z-index: 2;
 }
 
 a,
@@ -26,6 +27,4 @@ a,
     place-items: center;
   }
 
-  #app {
-  }
 }
